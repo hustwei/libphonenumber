@@ -1,3 +1,7 @@
+Pending changes:
+Code changes:
+ - Update isNumberGeographical to return true for geographical mobile numbers.
+
 Mar 09, 2016: libphonenumber-7.2.7
 Code changes:
  - Update nationalPrefixOptionalWhenFormatting documentation.

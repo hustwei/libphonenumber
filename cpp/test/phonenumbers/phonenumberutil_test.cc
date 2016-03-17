@@ -1852,6 +1852,24 @@ TEST_F(PhoneNumberUtilTest, IsNumberGeographical) {
   number.set_country_code(800);
   number.set_national_number(12345678ULL);
   EXPECT_FALSE(IsNumberGeographical(number));  // Internation toll free number.
+
+  // We test that mobile phone numbers in relevant regions are indeed considered
+  // geographical.
+
+  // Argentina, mobile phone number.
+  number.set_country_code(54);
+  number.set_national_number(91187654321ULL);
+  EXPECT_TRUE(IsNumberGeographical(number));
+
+  // Mexico, mobile phone number.
+  number.set_country_code(52);
+  number.set_national_number(12345678900ULL);
+  EXPECT_TRUE(IsNumberGeographical(number));
+
+  // Mexico, another mobile phone number.
+  number.set_country_code(52);
+  number.set_national_number(15512345678ULL);
+  EXPECT_TRUE(IsNumberGeographical(number));
 }
 
 TEST_F(PhoneNumberUtilTest, IsLeadingZeroPossible) {
