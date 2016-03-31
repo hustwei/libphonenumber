@@ -3510,13 +3510,8 @@
         </nationalNumberPattern>
         <exampleNumber>114</exampleNumber>
       </shortCode>
-      <directoryServices>
-        <nationalNumberPattern>118</nationalNumberPattern>
-        <possibleNumberPattern>\d{3}</possibleNumberPattern>
-        <exampleNumber>118</exampleNumber>
-      </directoryServices>
       <emergency>
-        <nationalNumberPattern>11[24]</nationalNumberPattern>
+        <nationalNumberPattern>112</nationalNumberPattern>
         <possibleNumberPattern>\d{3}</possibleNumberPattern>
         <exampleNumber>112</exampleNumber>
       </emergency>
